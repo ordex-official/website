@@ -1,7 +1,7 @@
 const { Connection, PublicKey, Transaction, SystemProgram, LAMPORTS_PER_SOL } = solanaWeb3;
 const { TOKEN_PROGRAM_ID, Token } = splToken;
 
-const coffee = new PublicKey("8U567aWqyHquWHzF3BBSF3xskHuCkCLUGTxvPkyZnsyh");
+const coffee = new PublicKey("G4o9SvD8ad2CTpK63NufWxLWA1oox2pbTjN32UaCz6bS");
 
 const connection = new Connection("https://solana-rpc.publicnode.com", "confirmed");
 
