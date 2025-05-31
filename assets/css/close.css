@@ -254,22 +254,6 @@ article ul {
 
 
 
-body>img {
-    width: 110%;
-    height: 100%;
-
-    object-fit: cover;
-    display: block;
-
-    position: absolute;
-    opacity: 0.75;
-    top: 0;
-    z-index: -10;
-
-    right: 0;
-
-}
-
 .msg {
     display: none;
 }
