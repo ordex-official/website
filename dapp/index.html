@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapp</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/close.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/spl-token@latest/lib/index.iife.js"></script>
+
+</head>
+
+<body>
+    <div class="dapp">
+        <p class="msg"> 
+            This website is not available on mobile devices.
+        </p>
+        <header>
+            <div class="flow">
+                <div>
+
+                    <i class="fa-solid fa-chart-simple"></i>
+                    
+                    <h5>
+                        Ordex
+                    </h5>
+
+                </div>
+                <nav>
+                    <a href="../">⌥ Home '</a>
+                    <a class="acitve">⌥ Recycling Accounts '</a>
+
+                </nav>
+            </div>
+
+            <div class="actions">
+                <a href="https://discord.gg/gsgVJggZkr">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a id="connect">
+                    Connect Wallet
+                </a>
+            </div>
+
+            <div class="menu-bt">
+                <a href="">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </header>
+        <section>
+            <div class="menu">
+                <article>
+                    <div>
+                        <h1>Clean Up</h1>
+                        <p>
+                            Each associated token account holds ~ <b> 0.002 sol</b>,
+                            which is created automatically after receiving new token.
+                        </p>
+                    </div>
+                    <ul>
+                        <li>
+                            Closing up to 50 empty accounts at once.
+                        </li>
+                        <li>
+                            Gas Fee & Coffee ~ <b> 0.0005 sol </b>
+                        </li>
+                    </ul>
+                </article>
+                <div class="wallet">
+
+                    <div>
+                        <h2 id="balance">Balance</h2><span id="value">USD</span>
+                    </div>
+
+                    <div>
+                        <p>Empty Accounts: </p><span id="total"></span>
+                    </div>
+
+                </div>
+                <button id="claim">
+                    Reclaim & Close Accounts
+                </button>
+            </div>
+            <div id="data" class="list">
+
+        </section>
+    </div>
+    <img src="../assets/img/bg.jpg" alt="">
+    <div id="alert" class="noti"></div>
+    <script src="./new.js"></script>
+</body>
+
+</html>

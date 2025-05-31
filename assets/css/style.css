@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
+
+
+:root {
+    --solid: #DDF247;
+    --bg: #101010;
+}
+
+body {
+    background: var(--bg);
+    color: #fff;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.dapp {
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 15% calc(85% - 1rem);
+    gap: 1rem;
+}
+
+section {
+    padding: 0 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******************** FOOTER ***************** */
+
+
+
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2rem;
+
+} header h5 {
+
+    font-size: 2rem;
+    color: var(--solid);
+    font-weight: 900;
+
+}
+
+.flow {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+
+} .flow div {
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    height: 100%;
+    
+
+} .flow i {
+    height: 45px;
+    width: 45px;
+    color: #000;
+    border-radius: 10px;
+
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--solid);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+nav {
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1rem;
+
+
+} nav a {
+
+    opacity: 0.25;
+    transition: opacity .5s;
+    font-size: .85rem;
+
+
+} nav a:hover {
+
+    opacity: 1;
+
+
+} nav .acitve {
+
+    cursor: default;
+    color: var(--solid);
+    opacity: 1;
+
+}
+
+
+.actions a,  .menu-bt a {
+
+    background: var(--solid);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 1rem;
+    height: 45px;
+    width: 45px;
+    transition: all 0.5s;
+    border: 2px solid transparent;
+
+
+} .actions a:last-child {
+    
+    width: 167px;
+
+
+} .actions a:hover,  .menu-bt a:hover {
+
+    background: hsla(67, 87%, 61%, 0.1);
+    border: 2px solid #DDF247;
+    color: white;
+
+
+}
+
+
+.menu-bt {
+    display: none;
+}
+
+
+body > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+
+    position: absolute;
+    opacity: 0.75;
+    top: 0;
+    z-index: -10;
+
+    right: 0;
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+    header nav {
+        display: none;
+    }
+    
+
+    body > img {
+        display: none;
+    }
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordex</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/landing.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/spl-token@latest/lib/index.iife.js"></script>
+
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+    <div class="dapp">
+        <header>
+            <div class="flow">
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h5>
+                        Ordex
+                    </h5>
+                </div>
+                <nav>
+                    <a class="acitve">⌥ Home '</a>
+                    <a href="./dapp/">⌥ Recycling Accounts '</a>
+                </nav>
+            </div>
+
+            <div class="actions">
+                <a href="https://x.com/Ordex_Official">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://discord.gg/gsgVJggZkr">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a style="cursor: not-allowed; display: none;">
+                    Connect Wallet
+                </a>
+            </div>
+
+            <div class="menu-bt">
+                <a href="">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </header>
+        <section>
+            <article>
+                <h1>
+                    Dust Buster <br>
+                    <h2>token accounts</h2>
+                </h1>
+                <p>
+                    Reclaim solana by closing empty associated token accounts,
+                    created for each token you hold but left behind when you're no longer holding them,
+                    close all your unused token accounts at once, quickly and with the lowest fees.
+                </p>
+                <form id="wallet-form">
+                    <h3 for="wallet">Check Out: <span id="count"></span></h3>
+                    <p>
+
+                    </p>
+                    <div>
+                        <input type="text" id="wallet" placeholder="Solana Wallet Address" />
+                        <button id="but">Check</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </div>
+    <img src="./assets/img/bg.jpg" alt="">
+</body>
+
+</html>
