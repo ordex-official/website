@@ -3,6 +3,11 @@
     gap: 1rem;
 }
 
+.action a:last-child {
+    width: 135px;
+
+}
+
 section {
     padding-bottom: 2rem;
 
