@@ -122,7 +122,6 @@ nav {
 
 } nav a {
 
-    opacity: 0.25;
     transition: opacity .5s;
     font-size: .85rem;
 
@@ -195,6 +194,10 @@ body > img {
 
     header nav {
         display: none;
+    }
+
+    section, header {
+        padding: 0 1rem;
     }
     
 
