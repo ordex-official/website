@@ -167,6 +167,11 @@ nav {
 }
 
 
+header #id {
+    width: 135px;
+}
+
+
 .menu-bt {
     display: none;
 }
