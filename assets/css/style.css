@@ -158,11 +158,6 @@ nav {
     border: 2px solid transparent;
 
 
-} .actions a:last-child {
-    
-    width: 167px;
-
-
 } .actions a:hover,  .menu-bt a:hover {
 
     background: hsla(67, 87%, 61%, 0.1);
