@@ -1,8 +1,6 @@
 const { Connection, PublicKey, Transaction, SystemProgram, LAMPORTS_PER_SOL } = solanaWeb3;
 const { TOKEN_PROGRAM_ID, Token } = splToken;
 
-const coffee = new PublicKey("G4o9SvD8ad2CTpK63NufWxLWA1oox2pbTjN32UaCz6bS");
-
 const connection = new Connection("https://solana-rpc.publicnode.com", "confirmed");
 
 const msg = document.getElementById('alert');
@@ -235,16 +233,6 @@ async function closeAccounts() {
 
 
     try {
-
-
-        const tipIx = SystemProgram.transfer({
-            fromPubkey: singer,
-            toPubkey: coffee,
-            lamports: 0.0005 * LAMPORTS_PER_SOL,
-        });
-
-        transaction.add(tipIx);
-
 
         transaction.feePayer = singer;
         const { blockhash } = await connection.getLatestBlockhash("finalized");
